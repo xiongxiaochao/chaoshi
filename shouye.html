@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东超市</title>
+</head>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/jdskt.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+<style type="text/css">
+    .swiper-container {
+        width: 780px;
+        height: 400px;
+        background: #ccc;
+    }
+
+    .swiper-slide {
+        font-size: 60px;
+        text-align: center;
+        line-height: 300px;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -30px;
+        display: block;
+        width: 24px;
+        height: 60px;
+        line-height: 60px;
+        background: gray;
+        background: rgba(0, 0, 0, .21);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#32000000, endColorstr=#32000000);
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#32000000, endColorstr=#32000000);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: simsun;
+        color: #fff;
+        z-index: 5;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -30px;
+        display: block;
+        width: 24px;
+        height: 60px;
+        line-height: 60px;
+        background: gray;
+        background: rgba(0, 0, 0, .21);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#32000000, endColorstr=#32000000);
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#32000000, endColorstr=#32000000);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: simsun;
+        color: #fff;
+        z-index: 5;
+    }
+
+    .swiper-scrollbar {
+        width: 780px;
+        display: inline-block;
+        height: 5px;
+        background-color: #4a4110;
+    }
+
+    .swiper-container1 {
+        width: 180px;
+        height: 205px;
+        background: #ccc;
+        margin: auto;
+        background: #fff2c6;
+    }
+
+    .swiperbox {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container2 {
+        width: 100%;
+        height: 260px;
+        background: #fff;
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    body {
+        background: #F5F5F5;
+    }
+</style>
+
+<body>
+
+
+    <div id="jidong">
+        <div id="headd"></div>
+        <!-- <div id="shortcut">
+            <div class="content">
+                <ul class="fl">
+                    <li class="ttbar-home">
+                        <i></i>
+                        <a href="###">京东首页</a>
+                    </li>
+                </ul>
+                <ul class="fr">
+                    <li class="for1">
+                        <a href="html/login.html" class="login">你好，请先登录</a>
+                        &nbsp;&nbsp;
+                        <a href="" class="regist" style="margin-right:4px;">免费注册</a>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for2">
+                        <div>
+                            <a href="">我的订单</a>
+                        </div>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for3 dorpdown">
+                        <div>
+                            <a href="">我的京东</a>
+                            <i class="dao"></i>
+                        </div>
+                        <div class="dddiv">
+                            <div class="dddiv-1">
+                                <div class="fore1">
+                                    <a href="###">待处理订单</a>
+                                    <a href="###">返修退换货</a>
+                                    <a href="###">降价商品</a>
+                                </div>
+                                <div class="fore1">
+                                    <a href="###">消息</a>
+                                    <a href="###">我的回答</a>
+                                    <a href="###">我的关注</a>
+                                </div>
+                            </div>
+                            <div class="dddiv-2">
+                                <div class="fore1">
+                                    <a href="###">我的京豆</a>
+                                    <a href="###">我的白条</a>
+                                </div>
+                                <div class="fore1">
+                                    <a href="###">我的优惠券</a>
+                                    <a href="###">我的理财</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for4">
+                        <div>
+                            <a href="">京东会员</a>
+                        </div>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for5">
+                        <div>
+                            <a href="">企业采购</a>
+                        </div>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for6 dorpdown">
+                        <div>
+                            <a href="">客户服务</a>
+                            <i class="dao"></i>
+                        </div>
+                        <div class="dddiv">
+                            <div class="dddiv-1">
+                                <span>客户</span>
+                                <div class="fore1">
+                                    <a href="###">帮助中心</a>
+                                    <a href="###">在线客服</a>
+                                    <a href="###">电话客服</a>
+                                    <a href="###">金融咨询</a>
+                                </div>
+                                <div class="fore1">
+                                    <a href="###">售后服务</a>
+                                    <a href="###">意见建议</a>
+                                    <a href="###">客服邮箱</a>
+                                    <a href="###">全球售客服</a>
+                                </div>
+                            </div>
+                            <div class="dddiv-2">
+                                <span>客户</span>
+                                <div class="fore1">
+                                    <a href="###">合作招商</a>
+                                    <a href="###">商家后台</a>
+                                    <a href="###">商家帮助</a>
+                                </div>
+                                <div class="fore1">
+                                    <a href="###">成长中心</a>
+                                    <a href="###">京麦合作台</a>
+                                    <a href="###">规则平台</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for7 dorpdown">
+                        <div>
+                            <a href="">网站导航</a>
+                            <i class="dao"></i>
+                        </div>
+                        <div class="dddiv">
+                            <div class="dddiv-1">
+                                <dl class="fore1">
+                                    <dt>特色主题</dt>
+                                    <dd>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+
+                                    </dd>
+                                </dl>
+                                <dl class="fore1">
+                                    <dt>行业频道</dt>
+                                    <dd>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                    </dd>
+                                </dl>
+                                <dl class="fore1">
+                                    <dt>生活服务</dt>
+                                    <dd>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                    </dd>
+                                </dl>
+                                <dl class="fore1">
+                                    <dt>更多精选</dt>
+                                    <dd>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                        <a href="###">京东使用</a>
+                                        <a href="###">京东会员</a>
+                                        <a href="###">装机大师</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="shuxian"></li>
+                    <li class="for8">
+                        <div>
+                            <a href="" style="color:#f30213">手机京东</a>
+                        </div>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="header">
+            <div class="content">
+
+
+                <div id="logo">
+                    <a href="###" class="logo"></a>
+                    <div class="logo-1">
+                        <div class="zuo"></div>
+                        <div class="zuo2">
+                            <div class="zuo2-ban">
+                                <p>广东</p>
+                                <i class="dao2"></i>
+                            </div>
+                            <div class="zuo2-drop">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="###">北京</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">上海</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">天津</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">湖北</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">湖南</a>
+                                        </li>
+                                        <li>
+                                            <a href="###" class="hong">广东</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">广西</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">西藏</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">内蒙古</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">江西</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">哈尔滨</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">重庆</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">吉林</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">四川</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">山东</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">安徽</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">浙江</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">青海</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">宁夏</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">山西</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">陕西</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">云南</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">福建</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">江苏</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">北京</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">北京</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">北京</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">北京</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">北京</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">辽宁</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">新疆</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">港澳</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">台湾</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">钓鱼岛</a>
+                                        </li>
+                                        <li>
+                                            <a href="###">海外</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+        <div id="search">
+            <ul id="shelper">
+                <li>
+                    <div class="search-item">垃圾袋</div>
+                    <div class="search-count">搜索历史</div>
+                </li>
+                <li class="colse">全部删除</li>
+            </ul>
+            <div class="form">
+                <input class="tex" type="text" placeholder="点击搜索你想要的吧！">
+                <button class="btn">搜索</button>
+            </div>
+            <div class="hotwords">
+                <a href="###">食品</a>
+                <a href="###">母婴</a>
+                <a href="###">好物9.9</a>
+                <a href="###">婚庆美酒</a>
+            </div>
+
+        </div>
+
+
+        <div id="settleup">
+            <div class="cw">
+                <a href="###" id="cwa">我的购物车</a>
+                <i class="cwi"></i>
+            </div>
+            <div class="cwdrop">
+                <div class="smt">
+                    <h4>最新加入的产品</h4>
+                </div>
+                <div class="smc">
+                    <ul>
+                        <li>
+                            <div class="p-img fl">
+                                <a href="###">
+                                    <img src="img/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="p-name fl">
+                                <a href="###" title="好丽友（orion）饼干蛋糕  营养早餐 下午茶 派 36枚超值量贩定制礼盒（新老包装交替发货）">
+                                    好丽友（orion）饼干蛋糕 营养早餐 下午茶 派 36枚超值量贩定制
+                                </a>
+                            </div>
+                            <div class="p-price fr">
+                                <span>￥69.80</span>
+                                <br>
+                                <a href="###">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="smb">
+                    <div class="p-total">
+                        共
+                        <b>1</b>
+                        件商品&nbsp;&nbsp;共计
+                        <strong>￥ 69.80</strong>
+                    </div>
+                    <a href="###" id="payforgoods">去购物车</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="headerqrcode">
+            <a href="###">
+                <i></i>
+                <span>扫码享受优惠</span>
+            </a>
+            <div class="hqdrop">
+                <div>
+                    <img src="img/erweima.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+    <div class="nav">
+        <div class="chaoshi_menu">
+            <div class="content">
+                <ul class="chaoshi_menu_list">
+                    <li>
+                        <i></i>
+                        <a href="###">超市首页</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="###">超值量贩</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="###">京东生鲜</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="###">品牌特卖</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="###">品质进口</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="###">山姆会员店</a>
+                    </li>
+                    <li>
+                        <i></i>
+                        <a href="###">PLUS会员</a>
+                    </li>
+                </ul>
+                <ul class="chaoshi_menu_ad">
+                    <li>
+                        <i class="menu_y"></i>
+                        <span>满99免运费</span>
+                    </li>
+                    <li>
+                        <i class="menu_z"></i>
+                        <span>100%渠道保证</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chaoshi_banner">
+            <div class="content">
+                <div class="chaoshi_nav fl">
+                    <div class="chaohi_nav_header">京东超市频道分类</div>
+                    <div class="chaoshi_nav_body">
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    食品饮料
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">休闲食品</a>
+                                    <a href="###">牛奶</a>
+                                    <a href="###">饮料</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    粮油副食
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">食用油</a>
+                                    <a href="###">米面</a>
+                                    <a href="###">厨房调味</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">粮油副食</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                                <a href="###">花生油</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    个人护理
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">洗发护肤</a>
+                                    <a href="###">身体</a>
+                                    <a href="###">口腔</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">口腔护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                                <a href="###">牙线</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">口腔护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                                <a href="###">电动牙刷</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">口腔护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                                <a href="###">牙刷</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">口腔护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                                <a href="###">牙膏</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    护肤美妆
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">面部护肤</a>
+                                    <a href="###">男士</a>
+                                    <a href="###">香水彩妆</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">洗发护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                                <a href="###">洗发水</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">洗发护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                                <a href="###">护发精油</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">洗发护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                                <a href="###">护发素</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">洗发护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                                <a href="###">面膜</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">洗发护理</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                                <a href="###">洗面奶</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    家居清洁
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">湿纸巾</a>
+                                    <a href="###">衣物清洁</a>
+                                    <a href="###">厨房用品</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">纸巾湿品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">纸巾湿品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">纸巾湿品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">纸巾湿品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">纸巾湿品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">纸巾湿品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                                <a href="###">纸巾</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    母婴产品
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">奶粉</a>
+                                    <a href="###">尿裤</a>
+                                    <a href="###">玩具</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">进口食品</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                                <a href="###">休闲零食</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    中外美酒
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">白酒</a>
+                                    <a href="###">红酒</a>
+                                    <a href="###">威士忌</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">白酒</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                                <a href="###">清香型</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    京东生鲜
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">橙子</a>
+                                    <a href="###">奇异果</a>
+                                    <a href="###">北极虾</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">新鲜水果</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                                <a href="###">苹果</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_header">
+                                <h3>
+                                    家居生活
+                                    <i></i>
+                                </h3>
+                                <p class="item_header_sublinks">
+                                    <a href="###">置物架</a>
+                                    <a href="###">五金</a>
+                                    <a href="###">绿植</a>
+                                </p>
+                            </div>
+                            <div class="item_body">
+                                <div class="item_body_wrapper ">
+                                    <ul class="chaoshi_nav_sub ">
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                        <li class="chaoshi_nav_sub_item">
+                                            <div class="chaoshi_nav_sub_title">五金工具</div>
+                                            <div class="chaoshi_nav_sub_main">
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                                <a href="###">置物架</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="chaoshi_banner_mid fl">
+                    <div class="swiper-container swiper-container3" id="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/lun1.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/lun2.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/lun3.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/lun4.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/lun5.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/lun6.webp" alt=""></div>
+                        </div>
+                        <!--按钮-->
+                        <div class="swiper-button-prev">&lt;</div>
+                        <div class="swiper-button-next">&gt;</div>
+                        <!--分页-->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <ul class="chaoshi_bottom ">
+                        <li class="chaoshi_bottom_item fl"><a href="###"><img src="img/lun7.webp" alt=""></a> </li>
+                        <li class="chaoshi_bottom_item fl"><a href="###"><img src="img/lun8.webp" alt=""></li>
+                    </ul>
+                </div>
+
+
+                <div class="chaoshi_right fr">
+                    <div class="chaoshi_coupon">
+                        <a href="###">
+                            <img src="img/lun9.png" alt="">
+                        </a>
+                    </div>
+                    <div class="chaoshi_handy">
+                        <h4>一 一</h4>
+                        <p class="chaoshi_right_tip">小用品 大用途</p>
+                        <div class="chaoshi_handy_carousel">
+                            <ul class="chaoshi_handy_carousel_main">
+                                <div class="swiper-container swiper-container1" id="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide swiper-slide1"><img style="vertical-align:top"
+                                                src="img/lun10.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slide1"><img style="vertical-align:top"
+                                                src="img/lun11.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slide1"><img style="vertical-align:top"
+                                                src="img/lun12.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slide1"><img style="vertical-align:top"
+                                                src="img/lun13.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide swiper-slide1"><img style="vertical-align:top"
+                                                src="img/lun14.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="chaoshi_seckill">
+        <div class="content">
+            <div class="chaoshi_seckill_hd">
+                <h3></h3>
+                <div class="chaoshi_seckill_time">
+                    <span>距离本场结束还有</span>
+                    <div class="chaoshi_seckill_time_main">
+
+                    </div>
+                </div>
+            </div>
+            <div class="chaoshi_seckill_hd">
+                <ul class="chaoshi_seckill_list ">
+                    <li class="chaoshi_seckill_item ">
+                        <div class="csi_pic">
+                            <a href="###">
+                                <img src="img/xian1.webp" alt="">
+                                <p>越南进口白心火龙果4个装 中果 单果375-500g 新鲜水果</p>
+                            </a>
+                        </div>
+                        <p class="csi_price ">
+                            <span>¥32.80</span>
+                            <del>¥61.90</del>
+                        </p>
+                    </li>
+                    <li class="chaoshi_seckill_item ">
+                        <div class="csi_pic">
+                            <a href="###">
+                                <img src="img/xian2.webp" alt="">
+                                <p>【1份立减50 第2份0元】蟹小茉 小龙虾即食熟食 海鲜水产 麻辣小龙虾35-50只1.8kg(4-6钱)</p>
+                            </a>
+                        </div>
+                        <p class="csi_price ">
+                            <span>¥128.80</span>
+                            <del>¥275.90</del>
+                        </p>
+                    </li>
+                    <li class="chaoshi_seckill_item ">
+                        <div class="csi_pic">
+                            <a href="###">
+                                <img src="img/xian3.webp" alt="">
+                                <p>花王（Merries）拉拉裤 XXL26片 特大号尿不湿（≥15kg）（日本原装进口）</p>
+                            </a>
+                        </div>
+                        <p class="csi_price ">
+                            <span>¥115.80</span>
+                            <del>¥117.90</del>
+                        </p>
+                    </li>
+                    <li class="chaoshi_seckill_item ">
+                        <div class="csi_pic">
+                            <a href="###">
+                                <img src="img/xian4.webp" alt="">
+                                <p>NUK奶瓶清洗剂清洁液婴儿宝宝用品清洁剂500ml</p>
+                            </a>
+                        </div>
+                        <p class="csi_price ">
+                            <span>¥45.80</span>
+                            <del>¥61.90</del>
+                        </p>
+                    </li>
+                    <li class="chaoshi_seckill_item ">
+                        <div class="csi_pic">
+                            <a href="###">
+                                <img src="img/xian5.webp" alt="">
+                                <p>【牛栏山旗舰店】牛栏山二锅头陈酿白酒42度 500ml*12瓶 整箱装（白牛二/牛白瓶）浓香风格白酒</p>
+                            </a>
+                        </div>
+                        <p class="csi_price ">
+                            <span>¥167.80</span>
+                            <del>¥265.90</del>
+                        </p>
+                    </li>
+                </ul>
+                <a href="###" class="chaoshi_seckill_more">
+                    <img src="img/xian6.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="chaoshi_discount">
+        <div class="content">
+            <div class="chaoshi_mod_head">
+                <h3>超值量贩</h3>
+            </div>
+            <ul class="chaoshi_discount_big ">
+                <li class="J_goods_item ">
+                    <div class="cdb_bd">
+                        <a class="cdb_pic" href="###">
+                            <img src="img/zhe1.webp" alt="">
+                        </a>
+                        <a class="cdb_name" href="###">徐福记 沙皇礼盒 沙琪玛礼盒整箱糕点心 新年年货礼盒零</a>
+                        <p>超值量贩定制款</p>
+                    </div>
+                    <div class="cdb_ft ">
+                        <div class="cdb_ft_l">
+                            <p>量贩价：¥69.90</p>
+                        </div>
+                        <a href="###">
+                            <i></i>
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="J_goods_item ">
+                    <div class="cdb_bd">
+                        <a class="cdb_pic" href="###">
+                            <img src="img/zhe2.webp" alt="">
+                        </a>
+                        <a class="cdb_name" href="###">【超值量贩定制款】好丽友（orion）饼干蛋糕 营养早餐 </a>
+                        <p>超值量贩定制款</p>
+                    </div>
+                    <div class="cdb_ft ">
+                        <div class="cdb_ft_l">
+                            <p>量贩价：¥99.90</p>
+                        </div>
+                        <a href="###">
+                            <i></i>
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="J_goods_item ">
+                    <div class="cdb_bd">
+                        <a class="cdb_pic" href="###">
+                            <img src="img/zhe3.webp" alt="">
+                        </a>
+                        <a class="cdb_name" href="###">【超值量贩定制款】良品铺子 东方食力 肉干肉脯素食 休闲</a>
+                        <p>超值量贩定制款</p>
+                    </div>
+                    <div class="cdb_ft ">
+                        <div class="cdb_ft_l">
+                            <p>量贩价：¥59.90</p>
+                        </div>
+                        <a href="###">
+                            <i></i>
+                            <span>加入购物车</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="chaoshi_discount_small">
+                <div class="chaoshi_discount_listwrap">
+                    <ul class="chaoshi_discount_list ">
+                        <li class="J_goods_item ">
+                            <div class="cdi_pic">
+                                <a href="###">
+                                    <img src="img/zhe4.webp" alt="">
+                                    <p class="cdi_name">库博光学 美瞳彩色隐形眼镜 幻眸日抛30片浓情黑 375度</p>
+                                </a>
+                                <p>日抛30片</p>
+                            </div>
+                            <p class="cdi_price ">￥168.00</p>
+                            <a class="cdi_add_icon" href="###">
+                                <img src="img/gouwuche.png" alt="">
+                            </a>
+                        </li>
+                        <li class="J_goods_item ">
+                            <div class="cdi_pic">
+                                <a href="###">
+                                    <img src="img/zhe5.webp" alt="">
+                                    <p class="cdi_name">满乐福泰国香米 乌汶府茉莉香米 泰米 原装进口大米5KG</p>
+                                </a>
+                                <p>5kg</p>
+                            </div>
+                            <p class="cdi_price ">￥168.00</p>
+                            <a class="cdi_add_icon" href="###">
+                                <img src="img/gouwuche.png" alt="">
+                            </a>
+                        </li>
+                        <li class="J_goods_item ">
+                            <div class="cdi_pic">
+                                <a href="###">
+                                    <img src="img/zhe6.webp" alt="">
+                                    <p class="cdi_name">飞鹤(FIRMUS)星飞帆幼儿配方奶粉 3段(12-36个月幼儿适用) 700克*2罐</p>
+                                </a>
+                                <p>爆款直降</p>
+                            </div>
+                            <p class="cdi_price ">￥168.00</p>
+                            <a class="cdi_add_icon" href="###">
+                                <img src="img/gouwuche.png" alt="">
+                            </a>
+                        </li>
+                        <li class="J_goods_item ">
+                            <div class="cdi_pic">
+                                <a href="###">
+                                    <img src="img/zhe7.webp" alt="">
+                                    <p class="cdi_name">好奇 Huggies 铂金装婴儿湿巾 超厚倍柔天然呵护 80抽*8包</p>
+                                </a>
+                                <p>80抽*8包</p>
+                            </div>
+                            <p class="cdi_price ">￥168.00</p>
+                            <a class="cdi_add_icon" href="###">
+                                <img src="img/gouwuche.png" alt="">
+                            </a>
+                        </li>
+                        <li class="J_goods_item ">
+                            <div class="cdi_pic">
+                                <a href="###">
+                                    <img src="img/zhe8.webp" alt="">
+                                    <p class="cdi_name">三只松鼠网红零食大礼包1640g果干辣条鸭脖肉脯小吃joy定制款送礼女友礼物礼盒12袋装一整箱批发</p>
+                                </a>
+                                <p>下单立减</p>
+                            </div>
+                            <p class="cdi_price ">￥86.00</p>
+                            <a class="cdi_add_icon" href="###">
+                                <img src="img/gouwuche.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="chaoshi_discount_more" href="###">
+                    <img src="img/zhe9.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="chaoshi_brand">
+        <div class="content">
+            <div class="chaoshi_mod_head">
+                <h3>品牌特卖</h3>
+            </div>
+            <div class="chaoshi_brand_row">
+                <a href="###" class="chaoshi_brand_tday">
+                    <img src="img/brand1.webp" alt="">
+                </a>
+                <div class="chaoshi_brand_list">
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand2.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand3.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand4.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand5.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="chaoshi_brand_row">
+                <div class="chaoshi_brand_list">
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand6.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand7.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand8.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand9.webp" alt="">
+                    </a>
+                    <a href="###" class="chaoshi_brand_item">
+                        <img src="img/brand10.webp" alt="">
+                    </a>
+                    <a class="chaoshi_brand_more" href="###">
+                        <img src="img/brand11.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="chaoshi_hot">
+        <div class="content">
+            <div class="chaoshi_mod_head">
+                <h3>热卖商品</h3>
+            </div>
+            <div class="chaoshi_mod_body" id="chaoshi_mod_body">
+                <div class="swiperbox">
+                    <div class="swiper-container swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot2.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot3.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot4.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot2.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot3.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot4.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot2.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot3.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <a href="###">
+                                    <img src="img/hot4.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next">&gt;</div>
+                        <div class="swiper-button-prev">&lt;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="chaoshi_category ">
+        <div class="content">
+            <div class="chaoshi_mod_head">
+                <h3>美容护肤</h3>
+            </div>
+            <div class="chaoshi_category_bd ">
+                <div class="chaoshi_category_focus">
+                    <a href="###" class="chaoshi_category_focus_pic">
+                        <img src="img/category1.webp" alt="">
+                    </a>
+                    <div class="chaoshi_category_focus_key">
+                        <div class="chaoshi_category_focus_key_inner">
+                            <a href="###">防嗮</a>
+                            <a href="###">卸妆</a>
+                            <a href="###">眼霜</a>
+                            <a href="###">底妆</a>
+                            <a href="###">口红</a>
+                            <a href="###">爽肤水</a>
+                            <a href="###">面膜</a>
+                            <a href="###">洁面</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chaoshi_category_goods ">
+                    <ul id="boxlist">
+                        <!-- <li class="J_goods_item goods_item">
+                                <a class="goods_pic" href="###">
+                                    <img src="img/1.jpg" alt="">
+                                </a>
+                                <p class="goods_title">藏皂正品男旗舰店海盐硫磺臧皂洗面奶去角质黑头死皮除螨皂控油套装臧皂手工皂起泡网喜洁面清洁 100g</p>
+                                <div class="goods_prices">￥99</div>
+                                <a class="goods_add" href="###">
+                                    <i></i>
+                                    <span>加入购物车</span>
+                                </a>
+                            </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer" id="footer">
+
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-ce">
+            <div class="sidebar-gwc">
+                <h3>
+                    <a href="###">
+                        <i></i>
+                        <span>购物车</span>
+                    </a>
+                    <span id="close">x</span>
+                </h3>
+                <div id="middlebox"></div>
+                <!-- <div class="pdt">
+                    <div class="jtc-item-goods">
+                        <span class="p-img fl">
+                            <a href="###">
+                                <img src="img/1.jpg" alt="">
+                            </a>
+                        </span>
+                        <div class="p-name fl">
+                            <a href="###">好丽友（orion）饼干蛋糕 营养早餐 下午茶 派 36枚超值量贩定制</a>
+                        </div>
+                        <div class="p-price fr">
+                            <span>￥69.80</span>
+
+                        </div>
+                        <a href="###">删除</a>
+                    </div>
+                </div> -->
+                <div class="togwc">
+                    <div class="togwc2">
+                        <!-- <div class="num">
+                            <strong>1</strong>
+                            件商品
+                        </div>
+                        <div class="sum">
+                            共计:&nbsp;
+                            <strong>
+                                ￥69.80
+                            </strong>
+                        </div> -->
+                        <a href="html/gwc.html">去购物车结算</a>
+                    </div>
+                </div>
+            </div>
+            <div class="switch">
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">京东会员</em>
+                </div>
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">购物车</em>
+                </div>
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">我的关注</em>
+                </div>
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">我的足迹</em>
+                </div>
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">我的消息</em>
+                </div>
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">咨询JIMI</em>
+                </div>
+                <div class="sw1" id="totop">
+                    <em class="sw_text">顶部</em>
+                </div>
+                <div class="sw1 sw_gwc">
+                    <em class="sw_text">反馈</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<!-- <script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="js/common.js"></script>
+<script src="js/jdskt.js"></script>
+<script src="js/shouye.js"></script> -->
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/require.js" data-main="js/confi.js"></script>
+
+</html>

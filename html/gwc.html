@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车页</title>
+</head>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/gwc.css">
+
+<style type="text/css">
+    /* #cart li {
+        list-style: none;
+        clear: both;
+        width: 800px;
+    }
+
+    #cart ul li p {
+        float: left;
+        margin: 10px;
+    }
+
+    #cart ul li p span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #d8d8d8;
+        cursor: pointer;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    #cart ul li p span::selection {
+        background: transparent;
+    }
+
+    #cart div {
+        clear: both;
+        margin-left: 40px;
+    }
+
+    #cart div p {
+        float: left;
+        margin: 10px;
+    } */
+    body {
+        background: #fff;
+        font-size: 14px;
+    }
+
+    .middle {
+        overflow: hidden;
+        background: #fff;
+    }
+</style>
+
+
+<body>
+
+
+    <!-- 引入head -->
+    <div id="head"> </div>
+
+
+
+    <div class="middle">
+        <div class="content">
+            <div class="cart_filter">
+                <ul>
+                    <li class="switch_cart_item curr">
+                        <a href="###">
+                            <em>全部商品</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart_warp">
+                <div class="w">
+                    <ul id="cart">
+                        <li class="cart_thead">
+                            <p class="allinp">
+                                <!-- <input type="checkbox" name="" id="" value="" /> -->
+                                全选
+                            </p>
+                            <p class="column t_goods">商品</p>
+                            <p class="column t_price" style="padding-left: 80px;">单价</p>
+                            <p class="column t_num" style="padding-left: 160px;">数量</p>
+                            <p class="column t_sum" style="padding-left: 100px;">小计</p>
+                            <p class="column t_action" style="padding-left: 30px;">操作</p>
+                        </li>
+
+                        <div id="boxlist"></div>
+                        <li class="goods">
+                            <div class="shop">
+                                <div class="shop_checkbox">
+                                    <!-- <input type="checkbox" name="checkShop" id=""> -->
+                                </div>
+                                <span>
+                                    <a href="###">京东超市</a>
+                                </span>
+                            </div>
+                            <div class="ltembox"> </div>
+                            <!-- <div class="item_list">
+                                <p class="good_check"><input type="checkbox" name="good" value="" /></p>
+                                <p class="good_img"><img src="../img/1.jpg" alt=""></p>
+                                <p class="good_name">膜法世家面膜 水光补水保湿黑面膜贴尊享礼盒套装20片（水润光泽 保湿嫩肤 男女通用） </p>
+                                <p class="good_price">￥&nbsp;99.99</p>
+                                <p class="num">
+                                    <span class="cutnum">-</span>
+                                    <input class="nownum" data-num="200" type="text" value="1" />
+                                    <span class="addnum">+</span>
+                                </p>
+                                <p class="good_total">￥&nbsp;99.99</p>
+                                <p class="good_del">
+                                    <a href="javascript:;">删除</a>
+                                </p>
+                            </div> -->
+                        </li>
+
+                    </ul>
+                    <div id="del">
+                        <p id="allchecked"><input type="checkbox" name="" id="" value="" />全选</p>
+                        <p id="delall">
+                            <a href="javascript:;">删除</a>
+                        </p>
+                        <div class="fr">
+                            <p id="allnum">已选 0 件商品</p>
+                            <p id="totalprice">总计（不含运费）：￥0.00</p>
+                            <div class="btn_area">
+                                <a href="###">去结算</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 引入footer -->
+    <div id="footer"></div>
+
+
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+    (function () {
+        //引入子模块
+        $('#footer').load('../html/foot.html');
+        $('#head').load('../html/head.html');
+
+    })();
+
+</script>
+<script src="../js/gwc.js"></script>
+
+</html>
